@@ -75,3 +75,29 @@
 </script>
 
     
+<style>
+    .v-catalog {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .catalog-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .selector{
+        padding-left: 6%;
+        justify-content: left;
+        display: flex;
+        padding-bottom: 2%;
+        font-weight: bold;
+    }
+    .select{
+        background-color: aliceblue;
+        font-weight: bold;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+</style>

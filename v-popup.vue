@@ -37,3 +37,44 @@ export default {
 }
 </script>
 
+<style >
+    .popup{
+        padding: 16px;
+    }
+    .popup_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .popup_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .popup_footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .AddToCart{
+        border-radius: 3px ;
+        background-color: #81ff96a8;
+        padding: 3px;
+        border: solid 1px;
+        color: #000000;
+        height: 40px;
+        width: 100px;
+        font-weight: bold;
+    }
+    .ClosePopup{
+        border-radius: 3px ;
+        background-color: #ff8181;
+        padding: 3px;
+        border: solid 1px;
+        color: #000000;
+        height: 40px;
+        width: 100px;
+        font-weight: bold;
+    }
+</style>

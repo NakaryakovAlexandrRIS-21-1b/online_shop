@@ -63,3 +63,16 @@ export default {
 </script>
 
 
+<style>
+    .NoCart{
+        font-weight: bold;
+    }
+    .Total{
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        padding: 16;
+        background-color: #81ff96a8;
+    }
+</style>

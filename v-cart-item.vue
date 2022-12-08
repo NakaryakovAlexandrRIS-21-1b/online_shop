@@ -52,3 +52,17 @@ export default {
 
 }
 </script>
+<style>
+    .v-cart-item {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 8px 0 #e0e0e0;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .v-item-quantity {
+        font-weight: bold;
+    }
+</style>

@@ -76,3 +76,17 @@ export default{
 }
 </script>
 
+<style>
+    .v-main-wrapper{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .cart_catalog{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 16px;
+        border: solid 1px;
+        font-weight: bold;
+    }
+</style>

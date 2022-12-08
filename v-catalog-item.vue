@@ -83,3 +83,80 @@ export default {
 </script>
 
     
+<style>
+    .v-catalog-item {
+        flex-basis: 25%;
+        box-shadow: 0 0 8px 0 #e0e0e0;
+        padding: 16px;
+        margin: 16px;
+    }
+    .v-catalog-item-img {
+        object-fit: cover;
+    }
+    .product-name {
+        font-weight: bold;
+    }
+    .product-price {
+        font-weight: bold;
+    }
+    .btn {
+        font-weight: bold;
+    }
+    .buttons{
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .show-info{
+        border-radius: 3px ;
+        padding: 3px;
+        border: solid 1px;
+        color: #000000;
+        height: 40px;
+        width: 70px;
+        margin-right: 5px;
+    }
+    .add-to-cart-btn{
+        border-radius: 3px ;
+        background-color: #81ff96a8;
+        padding: 3px;
+        border: solid 1px;
+        color: #000000;
+        height: 40px;
+        width: 100px;
+        margin-left: 5px;
+    }
+    .popup{
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #ffffff;
+        box-shadow: 0 0 17px 0;
+        z-index: 10;
+    }
+    .popup-context{
+        margin-top: 10px;
+
+
+    }
+    .popup-wrapper{
+        display: flex;
+        font-weight: bold;
+    }
+    .popup-backgroud{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
