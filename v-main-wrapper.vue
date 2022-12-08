@@ -1,18 +1,26 @@
 <template>
     <div class="v-main-wrapper">
-        <div class = "cart_catalog">
+        <div class = "cart_catalog"
+            v-if = "!IsCart"
+            @click="Switch">
                 Cart
         </div>
         <div 
-            class = "cart_catalog">
+            class = "cart_catalog"
+            v-if = "IsCart"
+            @click="Switch">
                 Back to catalog
         </div>
-        <div >Loading...</div>
+        <div v-if="!products.length">Loading...</div>
         <v-catalog 
-            
+            :prod = "products"
+            v-if = "(!IsCart && products.length)"
         />
         <v-cart 
-            
+            :prod = "cart_items"
+            v-if = "IsCart"
+            @Delet = "getCart"
+            @getCart = "getCart"
          />
     </div>
 </template>
@@ -27,7 +35,35 @@ export default{
         vCatalog,
        vCart
     },
-    
+    computed: {
+        
+    },
+    created(){
+        fetch('http://localhost/queries/getProducts.php').then((response) => response.json())
+            .then((queryData) => {
+                this.products = queryData
+            })
+    },
+    methods:{
+
+        getCart(){
+            fetch(`http://localhost/queries/getCart.php`).then((response) => response.json())
+            .then((queryData) => {
+                this.cart_items = queryData
+            })
+        },
+        Switch(){
+            if(this.IsCart) {
+                this.IsCart = false
+            }
+            else {
+                this.IsCart = true
+                }
+            this.getCart()
+        }
+    },
+    props: {
+    },
     data() {
         return {
             IsCart: false,
@@ -40,6 +76,3 @@ export default{
 }
 </script>
 
-<style>
-    
-</style>
